@@ -1,0 +1,199 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('./flower.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #000000, #434343);
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+header img {
+    height: 50px;
+    margin: 5px 0;
+    max-width: 100%;
+}
+
+header .home-button {
+    background-color: #3c566f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header .home-button:hover {
+    background-color: #000000;
+    transform: scale(1.1);
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.pdf-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pdf-container iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.gallery {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    display: none;
+    transition: opacity 1s ease-in-out;
+}
+
+.gallery img.active {
+    display: block;
+    opacity: 1;
+}
+
+.gallery .caption {
+    text-align: center;
+    margin-top: 10px;
+    color: #2c3e50;
+    font-size: 16px;
+    display: none;
+}
+
+.gallery .caption.active {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: linear-gradient(to right, #434343, #000000);
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #3498db;
+}
+
+.main_button {
+    float: right;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    font-size: medium;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.main_button:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .home-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    header img {
+        height: 40px;
+    }
+
+    .pdf-container iframe {
+        height: 400px;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+}

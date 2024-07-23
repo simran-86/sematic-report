@@ -1,0 +1,607 @@
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
+#################################################################
+
+@prefix : 		<http://visualdataweb.org/newOntology/> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@prefix wot: 		<http://xmlns.com/wot/0.1/> .
+@prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
+@base 			<http://visualdataweb.org/newOntology/> .
+
+<http://visualdataweb.org/newOntology/> rdf:type owl:Ontology ;
+                                        dc:title "New ontology"@en; 
+                                        dc:description "New ontology description"@en . 
+#################################################################
+
+###  Property Definitions (Number of Property) 91 ###
+#  --------------------------- Property 0------------------------- 
+:hasAdmissioncell rdf:type owl:ObjectProperty ;
+                  rdfs:label "hasAdmissioncell"@en; 
+                  rdfs:domain :College;
+                  rdfs:range :Admission_Cell . 
+#  --------------------------- Property 1------------------------- 
+:provide rdf:type owl:ObjectProperty ;
+         rdfs:label "provide"@en; 
+         rdfs:domain :College;
+         rdfs:range :Departments . 
+#  --------------------------- Property 2------------------------- 
+:belongs_to rdf:type owl:ObjectProperty ;
+            rdfs:label "belongs to"@en; 
+            rdfs:domain :Library;
+            rdfs:range :College . 
+#  --------------------------- Property 3------------------------- 
+:provides_facility_of rdf:type owl:ObjectProperty ;
+                      rdfs:label "provides facility of"@en; 
+                      rdfs:domain :College;
+                      rdfs:range :Hostel . 
+#  --------------------------- Property 4------------------------- 
+:provides rdf:type owl:ObjectProperty ;
+          rdfs:label "provides"@en; 
+          rdfs:domain :College;
+          rdfs:range :Sports_Complex . 
+#  --------------------------- Property 5------------------------- 
+:has_ rdf:type owl:ObjectProperty ;
+      rdfs:label "has "@en; 
+      rdfs:domain :College;
+      rdfs:range : . 
+#  --------------------------- Property 6------------------------- 
+:provides_t_and_c rdf:type owl:ObjectProperty ;
+                  rdfs:label "provides t and c"@en; 
+                  rdfs:domain :College;
+                  rdfs:range :Testing_and_consultancy . 
+#  --------------------------- Property 7------------------------- 
+:provides_t_and_p rdf:type owl:ObjectProperty ;
+                  rdfs:label "provides t and p"@en; 
+                  rdfs:domain :College;
+                  rdfs:range :Tand_p_cell . 
+#  --------------------------- Property 8------------------------- 
+:provides_dsc rdf:type owl:ObjectProperty ;
+              rdfs:label "provides dsc"@en; 
+              rdfs:domain :College;
+              rdfs:range :Day_Scholar_club . 
+#  --------------------------- Property 9------------------------- 
+:provides_oat rdf:type owl:ObjectProperty ;
+              rdfs:label "provides oat"@en; 
+              rdfs:domain :College;
+              rdfs:range :Open_Air_Theatre . 
+#  --------------------------- Property 10------------------------- 
+:Manages rdf:type owl:ObjectProperty ;
+         rdfs:label "Manages"@en; 
+         rdfs:domain :Admission_Coordinator;
+         rdfs:range :Admission_Cell . 
+#  --------------------------- Property 11------------------------- 
+:Offers rdf:type owl:ObjectProperty ;
+        rdfs:label "Offers"@en; 
+        rdfs:domain :Admission_Cell;
+        rdfs:range :Porograms . 
+#  --------------------------- Property 12------------------------- 
+:Are_Part_of_ rdf:type owl:ObjectProperty ;
+              rdfs:label "Are Part of "@en; 
+              rdfs:domain :Courses;
+              rdfs:range :Porograms . 
+#  --------------------------- Property 13------------------------- 
+:type rdf:type owl:ObjectProperty ;
+      rdfs:label "type"@en; 
+      rdfs:domain :Courses;
+      rdfs:range :Btech . 
+#  --------------------------- Property 14------------------------- 
+:type1 rdf:type owl:ObjectProperty ;
+       rdfs:label "type1"@en; 
+       rdfs:domain :Courses;
+       rdfs:range :Mtech . 
+#  --------------------------- Property 15------------------------- 
+:type2 rdf:type owl:ObjectProperty ;
+       rdfs:label "type2"@en; 
+       rdfs:domain :Courses;
+       rdfs:range :Phd . 
+#  --------------------------- Property 16------------------------- 
+:type3 rdf:type owl:ObjectProperty ;
+       rdfs:label "type3"@en; 
+       rdfs:domain :Courses;
+       rdfs:range :BCA . 
+#  --------------------------- Property 17------------------------- 
+:manages rdf:type owl:ObjectProperty ;
+         rdfs:label "manages"@en; 
+         rdfs:domain :Course_Instructor;
+         rdfs:range :Courses . 
+#  --------------------------- Property 18------------------------- 
+:Allocates_Seats_to rdf:type owl:ObjectProperty ;
+                    rdfs:label "Allocates Seats to"@en; 
+                    rdfs:domain :Admission_Cell;
+                    rdfs:range :Departments . 
+#  --------------------------- Property 19------------------------- 
+:ispartof rdf:type owl:ObjectProperty ;
+          rdfs:label "ispartof"@en; 
+          rdfs:domain :CSE;
+          rdfs:range :Branch . 
+#  --------------------------- Property 20------------------------- 
+:partof rdf:type owl:ObjectProperty ;
+        rdfs:label "partof"@en; 
+        rdfs:domain :Appled_Science;
+        rdfs:range :Branch . 
+#  --------------------------- Property 21------------------------- 
+:included_in rdf:type owl:ObjectProperty ;
+             rdfs:label "instance of"@en; 
+             rdfs:domain :Electrical;
+             rdfs:range :Branch . 
+#  --------------------------- Property 22------------------------- 
+:part_of rdf:type owl:ObjectProperty ;
+         rdfs:label "part of"@en; 
+         rdfs:domain :IT;
+         rdfs:range :Branch . 
+#  --------------------------- Property 23------------------------- 
+:part rdf:type owl:ObjectProperty ;
+      rdfs:label "part"@en; 
+      rdfs:domain :Civil;
+      rdfs:range :Branch . 
+#  --------------------------- Property 24------------------------- 
+:is_part_of rdf:type owl:ObjectProperty ;
+            rdfs:label "is part of"@en; 
+            rdfs:domain :ECE;
+            rdfs:range :Branch . 
+#  --------------------------- Property 25------------------------- 
+:Part_Of rdf:type owl:ObjectProperty ;
+         rdfs:label "Part Of"@en; 
+         rdfs:domain :Mechanical;
+         rdfs:range :Branch . 
+#  --------------------------- Property 26------------------------- 
+:offers rdf:type owl:ObjectProperty ;
+        rdfs:label "offers"@en; 
+        rdfs:domain :Departments;
+        rdfs:range :Branch . 
+#  --------------------------- Property 27------------------------- 
+:Reports_To rdf:type owl:ObjectProperty ;
+            rdfs:label "Reports To"@en; 
+            rdfs:domain :Course_Instructor;
+            rdfs:range :Departments . 
+#  --------------------------- Property 28------------------------- 
+:Provides_facility_of_ rdf:type owl:ObjectProperty ;
+                       rdfs:label "Provides facility of "@en; 
+                       rdfs:domain :College;
+                       rdfs:range :Class_Rool . 
+#  --------------------------- Property 29------------------------- 
+:PROVIDE_FACILITY_OF rdf:type owl:ObjectProperty ;
+                     rdfs:label "PROVIDE FACILITY OF"@en; 
+                     rdfs:domain :College;
+                     rdfs:range :Labs . 
+#  --------------------------- Property 30------------------------- 
+:Facility_provided rdf:type owl:ObjectProperty ;
+                   rdfs:label "Facility provided"@en; 
+                   rdfs:domain :College;
+                   rdfs:range :Workshop_Facility . 
+#  --------------------------- Property 31------------------------- 
+:CSE_Hod_handles rdf:type owl:ObjectProperty ;
+                 rdfs:label "CSE Hod handles"@en; 
+                 rdfs:domain :HOD;
+                 rdfs:range :CSE . 
+#  --------------------------- Property 32------------------------- 
+:Applied_science_hod_handles rdf:type owl:ObjectProperty ;
+                             rdfs:label "Applied science hod handles"@en; 
+                             rdfs:domain :HOD;
+                             rdfs:range :Appled_Science . 
+#  --------------------------- Property 33------------------------- 
+:EE_HOD_handles rdf:type owl:ObjectProperty ;
+                rdfs:label "EE HOD handles"@en; 
+                rdfs:domain :HOD;
+                rdfs:range :Electrical . 
+#  --------------------------- Property 34------------------------- 
+:IT_Hod_handles rdf:type owl:ObjectProperty ;
+                rdfs:label "IT Hod handles"@en; 
+                rdfs:domain :HOD;
+                rdfs:range :IT . 
+#  --------------------------- Property 35------------------------- 
+:Civil_Hod_handles rdf:type owl:ObjectProperty ;
+                   rdfs:label "Civil Hod handles"@en; 
+                   rdfs:domain :HOD;
+                   rdfs:range :Civil . 
+#  --------------------------- Property 36------------------------- 
+:ECE_HOD rdf:type owl:ObjectProperty ;
+         rdfs:label "ECE HOD handles"@en; 
+         rdfs:domain :HOD;
+         rdfs:range :ECE . 
+#  --------------------------- Property 37------------------------- 
+:Mech_hod_handles rdf:type owl:ObjectProperty ;
+                  rdfs:label "Mech hod handles"@en; 
+                  rdfs:domain :HOD;
+                  rdfs:range :Mechanical . 
+#  --------------------------- Property 38------------------------- 
+:Instructs_ rdf:type owl:ObjectProperty ;
+            rdfs:label "Instructs "@en; 
+            rdfs:domain :HOD;
+            rdfs:range :Faculty . 
+#  --------------------------- Property 39------------------------- 
+:Guides rdf:type owl:ObjectProperty ;
+        rdfs:label "Guides"@en; 
+        rdfs:domain :HOD;
+        rdfs:range :Students . 
+#  --------------------------- Property 40------------------------- 
+:Instructs_to rdf:type owl:ObjectProperty ;
+              rdfs:label "Instructs to"@en; 
+              rdfs:domain :Faculty;
+              rdfs:range :Students . 
+#  --------------------------- Property 41------------------------- 
+:INCLUDES rdf:type owl:ObjectProperty ;
+          rdfs:label "INCLUDES"@en; 
+          rdfs:domain :Departments;
+          rdfs:range :Workshop_Facility . 
+#  --------------------------- Property 42------------------------- 
+:Includes rdf:type owl:ObjectProperty ;
+          rdfs:label "Includes"@en; 
+          rdfs:domain :Departments;
+          rdfs:range :Class_Rool . 
+#  --------------------------- Property 43------------------------- 
+:Includes rdf:type owl:ObjectProperty ;
+          rdfs:label "Includes"@en; 
+          rdfs:domain :Departments;
+          rdfs:range :Labs . 
+#  --------------------------- Property 44------------------------- 
+:Reports_to rdf:type owl:ObjectProperty ;
+            rdfs:label "Reports to"@en; 
+            rdfs:domain :HOD;
+            rdfs:range :Pricipal . 
+#  --------------------------- Property 45------------------------- 
+:Managed_by rdf:type owl:ObjectProperty ;
+            rdfs:label "Managed by"@en; 
+            rdfs:domain :College;
+            rdfs:range :Pricipal . 
+#  --------------------------- Property 46------------------------- 
+:worksin rdf:type owl:ObjectProperty ;
+         rdfs:label "uses"@en; 
+         rdfs:domain :Students;
+         rdfs:range :Labs . 
+#  --------------------------- Property 47------------------------- 
+:uses rdf:type owl:ObjectProperty ;
+      rdfs:label "uses"@en; 
+      rdfs:domain :Students;
+      rdfs:range :Class_Rool . 
+#  --------------------------- Property 48------------------------- 
+:Includes_respective_library rdf:type owl:ObjectProperty ;
+                             rdfs:label "Includes respective library"@en; 
+                             rdfs:domain :Departments;
+                             rdfs:range :Library . 
+#  --------------------------- Property 49------------------------- 
+:has_access_to rdf:type owl:ObjectProperty ;
+               rdfs:label "has access to"@en; 
+               rdfs:domain :Students;
+               rdfs:range :Library . 
+#  --------------------------- Property 50------------------------- 
+:Access rdf:type owl:ObjectProperty ;
+        rdfs:label "Accesses"@en; 
+        rdfs:domain :Faculty;
+        rdfs:range :Library . 
+#  --------------------------- Property 51------------------------- 
+:attends rdf:type owl:ObjectProperty ;
+         rdfs:label "attends"@en; 
+         rdfs:domain :Students;
+         rdfs:range : . 
+#  --------------------------- Property 52------------------------- 
+:Managed_by_sports_faculty_coordinator rdf:type owl:ObjectProperty ;
+                                       rdfs:label "Managed by sports faculty coordinator"@en; 
+                                       rdfs:domain :Sports_Complex;
+                                       rdfs:range :Faculty . 
+#  --------------------------- Property 53------------------------- 
+:Manged_by_t_and_c_coordinator rdf:type owl:ObjectProperty ;
+                               rdfs:label "Manged by t and c coordinator"@en; 
+                               rdfs:domain :Testing_and_consultancy;
+                               rdfs:range :Faculty . 
+#  --------------------------- Property 54------------------------- 
+:can_visits rdf:type owl:ObjectProperty ;
+            rdfs:label "can visits"@en; 
+            rdfs:domain :Students;
+            rdfs:range :Testing_and_consultancy . 
+#  --------------------------- Property 55------------------------- 
+:visits rdf:type owl:ObjectProperty ;
+        rdfs:label "visits"@en; 
+        rdfs:domain :Students;
+        rdfs:range :Day_Scholar_club . 
+#  --------------------------- Property 56------------------------- 
+:visit rdf:type owl:ObjectProperty ;
+       rdfs:label "visit"@en; 
+       rdfs:domain :Students;
+       rdfs:range :Open_Air_Theatre . 
+#  --------------------------- Property 57------------------------- 
+:Managed_by_t_and_p_coordinator rdf:type owl:ObjectProperty ;
+                                rdfs:label "Managed by t and p coordinator"@en; 
+                                rdfs:domain :Tand_p_cell;
+                                rdfs:range :Faculty . 
+#  --------------------------- Property 58------------------------- 
+:offerstrainingprograms rdf:type owl:ObjectProperty ;
+                        rdfs:label "offerstrainingprograms"@en; 
+                        rdfs:domain :Tand_p_cell;
+                        rdfs:range :Students . 
+#  --------------------------- Property 59------------------------- 
+:Managed_by_hostel_coordinator rdf:type owl:ObjectProperty ;
+                               rdfs:label "Managed by hostel coordinator"@en; 
+                               rdfs:domain :Hostel;
+                               rdfs:range :Faculty . 
+#  --------------------------- Property 60------------------------- 
+:can_lives_in rdf:type owl:ObjectProperty ;
+              rdfs:label "can lives in"@en; 
+              rdfs:domain :Students;
+              rdfs:range :Hostel . 
+#  --------------------------- Property 61------------------------- 
+:can_interacts rdf:type owl:ObjectProperty ;
+               rdfs:label "can interacts"@en; 
+               rdfs:domain :Pricipal;
+               rdfs:range :Faculty . 
+#  --------------------------- Property 62------------------------- 
+:selects_one_branch rdf:type owl:ObjectProperty ;
+                    rdfs:label "selects one branch"@en; 
+                    rdfs:domain :Students;
+                    rdfs:range :Branch . 
+#  --------------------------- Property 63------------------------- 
+:Appoints rdf:type owl:ObjectProperty ;
+          rdfs:label "Appoints"@en; 
+          rdfs:domain :Appointment_Commitee;
+          rdfs:range :Faculty . 
+#  --------------------------- Property 64------------------------- 
+:appoints rdf:type owl:ObjectProperty ;
+          rdfs:label "appoints"@en; 
+          rdfs:domain :Appointment_Commitee;
+          rdfs:range :HOD . 
+#  --------------------------- Property 65------------------------- 
+:assigns_duties_to rdf:type owl:ObjectProperty ;
+                   rdfs:label "assigns duties to"@en; 
+                   rdfs:domain :Exam_Controller_Committee;
+                   rdfs:range :Faculty . 
+#  --------------------------- Property 66------------------------- 
+:makes_seating_plan rdf:type owl:ObjectProperty ;
+                    rdfs:label "makes seating plan"@en; 
+                    rdfs:domain :Exam_Controller_Committee;
+                    rdfs:range :Students . 
+#  --------------------------- Property 67------------------------- 
+:Manages_college_website_ rdf:type owl:ObjectProperty ;
+                          rdfs:label "Manages college website "@en; 
+                          rdfs:domain :Technical_work_commitee;
+                          rdfs:range :College . 
+#  --------------------------- Property 68------------------------- 
+:controls rdf:type owl:ObjectProperty ;
+          rdfs:label "controls"@en; 
+          rdfs:domain :Technical_work_commitee;
+          rdfs:range :Academic_portal . 
+#  --------------------------- Property 69------------------------- 
+:controls rdf:type owl:ObjectProperty ;
+          rdfs:label "controls"@en; 
+          rdfs:domain :Technical_work_commitee;
+          rdfs:range :Guru_portal . 
+#  --------------------------- Property 70------------------------- 
+:Assigns_username rdf:type owl:ObjectProperty ;
+                  rdfs:label "Assigns username"@en; 
+                  rdfs:domain :Technical_work_commitee;
+                  rdfs:range :Students . 
+#  --------------------------- Property 71------------------------- 
+:view_result rdf:type owl:ObjectProperty ;
+             rdfs:label "view result"@en; 
+             rdfs:domain :Students;
+             rdfs:range :Academic_portal . 
+#  --------------------------- Property 72------------------------- 
+:upload_tasks_on_ rdf:type owl:ObjectProperty ;
+                  rdfs:label "upload tasks on "@en; 
+                  rdfs:domain :Students;
+                  rdfs:range :Guru_portal . 
+#  --------------------------- Property 73------------------------- 
+:makes rdf:type owl:DatatypeProperty ;
+       rdfs:label "makes"@en; 
+       rdfs:domain :Exam_Controller_Committee;
+       rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 74------------------------- 
+:Schedules_task_on rdf:type owl:ObjectProperty ;
+                   rdfs:label "Schedules task on"@en; 
+                   rdfs:domain :Faculty;
+                   rdfs:range :Guru_portal . 
+#  --------------------------- Property 75------------------------- 
+:can_be_accessed_by rdf:type owl:ObjectProperty ;
+                    rdfs:label "can be accessed by"@en; 
+                    rdfs:domain :Academic_portal;
+                    rdfs:range :Faculty . 
+#  --------------------------- Property 76------------------------- 
+:Collaborates_with rdf:type owl:ObjectProperty ;
+                   rdfs:label "Collaborates with"@en; 
+                   rdfs:domain :Tand_p_cell;
+                   rdfs:range :Industry . 
+#  --------------------------- Property 77------------------------- 
+:Manage rdf:type owl:ObjectProperty ;
+        rdfs:label "Manage"@en; 
+        rdfs:domain :Managers;
+        rdfs:range :Industry . 
+#  --------------------------- Property 78------------------------- 
+:Rec rdf:type owl:ObjectProperty ;
+     rdfs:label "Recruites from"@en; 
+     rdfs:domain :Managers;
+     rdfs:range :Tand_p_cell . 
+#  --------------------------- Property 79------------------------- 
+:expenses_controlled_by rdf:type owl:ObjectProperty ;
+                        rdfs:label "expenses controlled by"@en; 
+                        rdfs:domain :College;
+                        rdfs:range :Financial_transactions . 
+#  --------------------------- Property 80------------------------- 
+:Managed_BY rdf:type owl:DatatypeProperty ;
+            rdfs:label "Managed BY"@en; 
+            rdfs:domain :Financial_transactions;
+            rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 81------------------------- 
+:MAKES_PAYMENT_TO rdf:type owl:ObjectProperty ;
+                  rdfs:label "Paid PAYMENT TO"@en; 
+                  rdfs:domain :Students;
+                  rdfs:range :Financial_transactions . 
+#  --------------------------- Property 82------------------------- 
+:MAKES_PAYMENT_TO rdf:type owl:ObjectProperty ;
+                  rdfs:label "MAKES PAYMENT TO"@en; 
+                  rdfs:domain :Financial_transactions;
+                  rdfs:range :Faculty . 
+#  --------------------------- Property 83------------------------- 
+:PROCESSED_AT rdf:type owl:ObjectProperty ;
+              rdfs:label "expenses PROCESSED AT"@en; 
+              rdfs:domain :Hostel;
+              rdfs:range :Financial_transactions . 
+#  --------------------------- Property 84------------------------- 
+:TYPE rdf:type owl:DatatypeProperty ;
+      rdfs:label "TYPE"@en; 
+      rdfs:domain :Students;
+      rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 85------------------------- 
+:Type rdf:type owl:DatatypeProperty ;
+      rdfs:label "Type"@en; 
+      rdfs:domain :Students;
+      rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 86------------------------- 
+:TYpe rdf:type owl:DatatypeProperty ;
+      rdfs:label "TYpe"@en; 
+      rdfs:domain :Students;
+      rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 87------------------------- 
+:TYPE_1 rdf:type owl:DatatypeProperty ;
+        rdfs:label "TYPE 1"@en; 
+        rdfs:domain :Faculty;
+        rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 88------------------------- 
+:TYPE_2 rdf:type owl:DatatypeProperty ;
+        rdfs:label "TYPE 2"@en; 
+        rdfs:domain :Faculty;
+        rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 89------------------------- 
+:Provides_Services_to rdf:type owl:ObjectProperty ;
+                      rdfs:label "Provides Services to"@en; 
+                      rdfs:domain :Testing_and_consultancy;
+                      rdfs:range :Clients . 
+#  --------------------------- Property 90------------------------- 
+:WORKS_IN rdf:type owl:ObjectProperty ;
+          rdfs:label "WORKS IN"@en; 
+          rdfs:domain :Clients;
+          rdfs:range :Industry . 
+###  Class Definitions (Number of Classes) 43 ###
+#  --------------------------- Class  0------------------------- 
+:College rdf:type owl:Class; 
+         rdfs:label "College"@en . 
+#  --------------------------- Class  1------------------------- 
+:Admission_Cell rdf:type owl:Class; 
+                rdfs:label "Admission Cell"@en . 
+#  --------------------------- Class  2------------------------- 
+:Departments rdf:type owl:Class; 
+             rdfs:label "Departments"@en . 
+#  --------------------------- Class  3------------------------- 
+:Library rdf:type owl:Class; 
+         rdfs:label "Library"@en . 
+#  --------------------------- Class  4------------------------- 
+:Hostel rdf:type owl:Class; 
+        rdfs:label "Hostel"@en . 
+#  --------------------------- Class  5------------------------- 
+:Sports_Complex rdf:type owl:Class; 
+                rdfs:label "Sports Complex"@en . 
+#  --------------------------- Class  6------------------------- 
+: rdf:type owl:Class; 
+  rdfs:label "Auditorium"@en . 
+#  --------------------------- Class  7------------------------- 
+:Testing_and_consultancy rdf:type owl:Class; 
+                         rdfs:label "Testing and consultancy"@en . 
+#  --------------------------- Class  8------------------------- 
+:Tand_p_cell rdf:type owl:Class; 
+             rdfs:label "T and P cell"@en . 
+#  --------------------------- Class  9------------------------- 
+:Day_Scholar_club rdf:type owl:Class; 
+                  rdfs:label "Day Scholar club"@en . 
+#  --------------------------- Class  10------------------------- 
+:Open_Air_Theatre rdf:type owl:Class; 
+                  rdfs:label "Open Air Theatre"@en . 
+#  --------------------------- Class  11------------------------- 
+:Admission_Coordinator rdf:type owl:Class; 
+                       rdfs:label "Admission Coordinator"@en . 
+#  --------------------------- Class  12------------------------- 
+:Porograms rdf:type owl:Class; 
+           rdfs:label "Programs"@en . 
+#  --------------------------- Class  13------------------------- 
+:Courses rdf:type owl:Class; 
+         rdfs:label "Courses"@en . 
+#  --------------------------- Class  14------------------------- 
+:Btech rdf:type owl:Class; 
+       rdfs:label "Btech"@en . 
+#  --------------------------- Class  15------------------------- 
+:Mtech rdf:type owl:Class; 
+       rdfs:label "Mtech"@en . 
+#  --------------------------- Class  16------------------------- 
+:Phd rdf:type owl:Class; 
+     rdfs:label "Phd"@en . 
+#  --------------------------- Class  17------------------------- 
+:BCA rdf:type owl:Class; 
+     rdfs:label "BCA"@en . 
+#  --------------------------- Class  18------------------------- 
+:Course_Instructor rdf:type owl:Class; 
+                   rdfs:label "Course Instructor"@en . 
+#  --------------------------- Class  19------------------------- 
+:CSE rdf:type owl:Class; 
+     rdfs:label "CSE"@en . 
+#  --------------------------- Class  20------------------------- 
+:Civil rdf:type owl:Class; 
+       rdfs:label "Civil"@en . 
+#  --------------------------- Class  21------------------------- 
+:IT rdf:type owl:Class; 
+    rdfs:label "IT"@en . 
+#  --------------------------- Class  22------------------------- 
+:Appled_Science rdf:type owl:Class; 
+                rdfs:label "Appled Science"@en . 
+#  --------------------------- Class  23------------------------- 
+:Mechanical rdf:type owl:Class; 
+            rdfs:label "Mechanical"@en . 
+#  --------------------------- Class  24------------------------- 
+:ECE rdf:type owl:Class; 
+     rdfs:label "ECE"@en . 
+#  --------------------------- Class  25------------------------- 
+:Electrical rdf:type owl:Class; 
+            rdfs:label "Electrical"@en . 
+#  --------------------------- Class  26------------------------- 
+:Branch rdf:type owl:Class; 
+        rdfs:label "Branch"@en . 
+#  --------------------------- Class  27------------------------- 
+:Labs rdf:type owl:Class; 
+      rdfs:label "Labs"@en . 
+#  --------------------------- Class  28------------------------- 
+:Workshop_Facility rdf:type owl:Class; 
+                   rdfs:label "Workshop Facility"@en . 
+#  --------------------------- Class  29------------------------- 
+:Class_Rool rdf:type owl:Class; 
+            rdfs:label "Class Room"@en . 
+#  --------------------------- Class  30------------------------- 
+:HOD rdf:type owl:Class; 
+     rdfs:label "HOD"@en . 
+#  --------------------------- Class  31------------------------- 
+:Faculty rdf:type owl:Class; 
+         rdfs:label "Faculty"@en . 
+#  --------------------------- Class  32------------------------- 
+:Students rdf:type owl:Class; 
+          rdfs:label "Students"@en . 
+#  --------------------------- Class  33------------------------- 
+:Pricipal rdf:type owl:Class; 
+          rdfs:label "Pricipal"@en . 
+#  --------------------------- Class  34------------------------- 
+:Appointment_Commitee rdf:type owl:Class; 
+                      rdfs:label "Appointment Commitee"@en . 
+#  --------------------------- Class  35------------------------- 
+:Exam_Controller_Committee rdf:type owl:Class; 
+                           rdfs:label "Exam Controller Committee"@en . 
+#  --------------------------- Class  36------------------------- 
+:Technical_work_commitee rdf:type owl:Class; 
+                         rdfs:label "Technical work commitee"@en . 
+#  --------------------------- Class  37------------------------- 
+:Academic_portal rdf:type owl:Class; 
+                 rdfs:label "Academic portal"@en . 
+#  --------------------------- Class  38------------------------- 
+:Guru_portal rdf:type owl:Class; 
+             rdfs:label "Guru portal"@en . 
+#  --------------------------- Class  39------------------------- 
+:Industry rdf:type owl:Class; 
+          rdfs:label "Industries"@en . 
+#  --------------------------- Class  40------------------------- 
+:Managers rdf:type owl:Class; 
+          rdfs:label "Managers"@en . 
+#  --------------------------- Class  41------------------------- 
+:Financial_transactions rdf:type owl:Class; 
+                        rdfs:label "Financial transactions"@en . 
+#  --------------------------- Class  42------------------------- 
+:Clients rdf:type owl:Class; 
+         rdfs:label "Clients"@en . 
